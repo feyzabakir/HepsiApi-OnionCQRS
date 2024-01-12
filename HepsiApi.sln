@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34310.174
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{BA473E38-F133-4466-B544-68BC213A941B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{C3195505-EAC9-4EC7-91B1-15DD90917E6E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{09BC1124-56A4-4EFC-91BC-49324ABD784C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HepsiApi.Application", "Core\HepsiApi.Application\HepsiApi.Application.csproj", "{BAFEC104-9334-4781-81F9-76057911693D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HepsiApi.Domain", "Core\HepsiApi.Domain\HepsiApi.Domain.csproj", "{671636F4-CB6D-4DCC-BF4A-C6CA07E606E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HepsiApi.Infrastructure", "Infrastructure\HepsiApi.Infrastructure\HepsiApi.Infrastructure.csproj", "{18DD962C-295B-4DF1-9F9C-A8B9E7687A59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HepsiApi.Persistence", "Infrastructure\HepsiApi.Persistence\HepsiApi.Persistence.csproj", "{35B20943-4C79-4E9B-BF52-E877CCA5D883}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HepsiApi.WebApi", "Presentation\HepsiApi.WebApi\HepsiApi.WebApi.csproj", "{BFA2ED6F-5099-464B-8350-453793518FF7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BAFEC104-9334-4781-81F9-76057911693D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAFEC104-9334-4781-81F9-76057911693D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAFEC104-9334-4781-81F9-76057911693D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAFEC104-9334-4781-81F9-76057911693D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{671636F4-CB6D-4DCC-BF4A-C6CA07E606E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{671636F4-CB6D-4DCC-BF4A-C6CA07E606E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{671636F4-CB6D-4DCC-BF4A-C6CA07E606E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{671636F4-CB6D-4DCC-BF4A-C6CA07E606E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18DD962C-295B-4DF1-9F9C-A8B9E7687A59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18DD962C-295B-4DF1-9F9C-A8B9E7687A59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18DD962C-295B-4DF1-9F9C-A8B9E7687A59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18DD962C-295B-4DF1-9F9C-A8B9E7687A59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35B20943-4C79-4E9B-BF52-E877CCA5D883}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35B20943-4C79-4E9B-BF52-E877CCA5D883}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35B20943-4C79-4E9B-BF52-E877CCA5D883}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35B20943-4C79-4E9B-BF52-E877CCA5D883}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFA2ED6F-5099-464B-8350-453793518FF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFA2ED6F-5099-464B-8350-453793518FF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFA2ED6F-5099-464B-8350-453793518FF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFA2ED6F-5099-464B-8350-453793518FF7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BAFEC104-9334-4781-81F9-76057911693D} = {BA473E38-F133-4466-B544-68BC213A941B}
+		{671636F4-CB6D-4DCC-BF4A-C6CA07E606E7} = {BA473E38-F133-4466-B544-68BC213A941B}
+		{18DD962C-295B-4DF1-9F9C-A8B9E7687A59} = {C3195505-EAC9-4EC7-91B1-15DD90917E6E}
+		{35B20943-4C79-4E9B-BF52-E877CCA5D883} = {C3195505-EAC9-4EC7-91B1-15DD90917E6E}
+		{BFA2ED6F-5099-464B-8350-453793518FF7} = {09BC1124-56A4-4EFC-91BC-49324ABD784C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AF988D1A-D11A-4BAF-85E1-BA80C3269E1F}
+	EndGlobalSection
+EndGlobal
