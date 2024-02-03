@@ -1,5 +1,4 @@
 using HepsiApi.Persistence;
-using HepsiApi.Application;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,7 +15,6 @@ builder.Configuration.SetBasePath(env.ContentRootPath).AddJsonFile("appsettings.
 
 
 builder.Services.AddPersistence(builder.Configuration);
-builder.Services.AddApplication();
 
 var app = builder.Build();
 
