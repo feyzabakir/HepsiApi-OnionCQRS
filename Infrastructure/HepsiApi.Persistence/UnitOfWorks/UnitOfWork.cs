@@ -12,19 +12,19 @@ namespace HepsiApi.Persistence.UnitOfWorks
 {
     public class UnitOfWork : IUnitOfWork
     {
-        private readonly AppDbContext dbContext;
+        private readonly AppDbContext _dbContext;
 
         public UnitOfWork(AppDbContext dbContext)
         {
-            this.dbContext = dbContext;
+            _dbContext = dbContext;
         }
 
-        public async ValueTask DisposeAsync() => await dbContext.DisposeAsync();
+        public async ValueTask DisposeAsync() => await _dbContext.DisposeAsync();
 
 
-        public int Save() => dbContext.SaveChanges();
-        public async Task<int> SaveAsync() => await dbContext.SaveChangesAsync();
-        IReadRepository<T> IUnitOfWork.GetReadRepository<T>() => new ReadRepository<T>(dbContext);
-        IWriteRepository<T> IUnitOfWork.GetWriteRepository<T>() => new WriteRepository<T>(dbContext);
+        public int Save() => _dbContext.SaveChanges();
+        public async Task<int> SaveAsync() => await _dbContext.SaveChangesAsync();
+        IReadRepository<T> IUnitOfWork.GetReadRepository<T>() => new ReadRepository<T>(_dbContext);
+        IWriteRepository<T> IUnitOfWork.GetWriteRepository<T>() => new WriteRepository<T>(_dbContext);
     }
 }
